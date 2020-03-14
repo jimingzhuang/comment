@@ -1,7 +1,23 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/homePage/homePage",
+    "pages/home/home",
+    "pages/food/food",
+    "pages/takeaway/takeaway",
+    "pages/recreation/recreation",
+    "pages/hotel/hotel",
+    "pages/film/film",
+    "pages/beauty",
+    "pages/beauty/beauty",
+    "pages/travel/travel",
+    "pages/ticket/ticket",
+    "pages/ktv/ktv",
+    "pages/whole/whole",
+    "pages/discount/discount",
+    "pages/shop/shop",
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "light",
