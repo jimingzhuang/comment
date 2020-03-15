@@ -5,13 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
+    discount:[]
 
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function () {
+     
+    wx.request({
+      url: 'https://www.fastmock.site/mock/544fe525f786aa90532109bb02a3e513/Discount/Discount_item',
+      success:res=>{
+        console.log(res)
+        
+        this.setData({
+          discount:res.data.Discount_item
+        })
+        for(var i=0;i<this.data.discount.length;i++){
+          this.data.discount[i].present_price=parseInt( this.data.discount[i].discount/10*this.data.discount[i].Or_price);  
+        }
+        this.setData({
+          discount:this.data.discount
+        })
+      }
+    })
+
 
   },
 

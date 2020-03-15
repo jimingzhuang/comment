@@ -1,1 +1,16 @@
 /* pages/discount/discount.wxss */
+@import "/asstes/fonts/iconfont.wxss";
+.discount{
+  width:48%;
+  float:left;
+  margin-left:1%;
+}
+.discount_item{
+  width: 100%;
+  padding-left: 1%;
+}
+
+.discount_item_text{
+  position: relative;
+  top:5px;
+}

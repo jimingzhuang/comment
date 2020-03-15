@@ -1,2 +1,94 @@
 <!--pages/discount/discount.wxml-->
-<text>pages/discount/discount.wxml</text>
+<text style="display:none;">pages/discount/discount.wxml</text>
+
+
+
+<view style="width:100%;">
+
+
+
+<view  class="discount_left discount">
+
+   <view class="discount_item" wx:for="{{discount}}" wx:if="{{index%2>0}}">
+     
+  <image  style="width:98%;height:{{item.present_price>200?item.present_price:200}}px;border-radius:4px 4px 0px 0px;" src="{{item.img}}"></image>
+
+  <view  style="height:100px;width:98%;" >
+
+  <view class="discount_item_text"  style="font-size:13px;color:#222222;height:37%;overflow:auto;width:90%;margin-left:5%;margin-top:5px;">{{item.title}}
+  </view>
+
+  <view class="discount_item_text" style="margin-left:5%;width:90%;height:20%;">
+   <view class="iconfont icon-shangpu" style="width:70%;float:left;font-size:13px;color:gray;"><view style="font-size:11px;display:inline-block;color:#8E8E8E;">{{item.shop_name}}</view></view>
+   <view style="width:30%;font-size:11px;float:left;text-align:right;color:#8E8E8E;">{{item.distance}}km</view>
+  </view>
+
+
+  <view class="discount_item_text">
+     <view style="float:left;color:#FF7040;font-size:17px;margin-left:3%;">￥{{item.present_price}}</view>
+     <view style="float:left;color:#777777;font-size:13px;margin-left:5%;margin-top:4px;">￥{{item.Or_price}}</view>
+     <view style="float:left;border:1px solid #FEDBD0;font-size:10px;color:#FF7040;margin-left:5%;margin-top:5px;">{{item.discount}}折</view>
+  </view>
+  
+  </view>
+
+   
+   </view>
+
+</view>
+
+
+
+
+
+
+
+
+<view  class="discount_right discount">
+
+
+
+   <view class="discount_item" wx:for="{{discount}}" wx:if="{{index%2<1}}">
+     
+  <image  style="width:98%;height:200px;border-radius:4px 4px 0px 0px;" src="{{item.img}}"></image>
+
+  <view  style="height:100px;width:98%;" >
+
+  <view class="discount_item_text"  style="font-size:13px;color:#222222;height:37%;overflow:auto;width:90%;margin-left:5%;margin-top:5px;">{{item.title}}
+  </view>
+
+  <view class="discount_item_text" style="margin-left:5%;width:90%;height:20%;">
+   <view class="iconfont icon-shangpu" style="width:70%;float:left;font-size:13px;color:gray;"><view style="font-size:11px;display:inline-block;color:#8E8E8E;">{{item.shop_name}}</view></view>
+   <view style="width:30%;font-size:11px;float:left;text-align:right;color:#8E8E8E;">{{item.distance}}km</view>
+  </view>
+
+
+  <view class="discount_item_text">
+     <view style="float:left;color:#FF7040;font-size:17px;margin-left:3%;">￥{{item.present_price}}</view>
+     <view style="float:left;color:#777777;font-size:13px;margin-left:5%;margin-top:4px;">￥{{item.Or_price}}</view>
+     <view style="float:left;border:1px solid #FEDBD0;font-size:10px;color:#FF7040;margin-left:5%;margin-top:5px;">{{item.discount}}折</view>
+  </view>
+  
+  </view>
+
+   
+   </view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+

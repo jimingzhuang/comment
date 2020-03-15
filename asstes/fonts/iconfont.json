@@ -1,0 +1,16 @@
+{
+  "id": "1673491",
+  "name": "aaa",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4166088",
+      "name": "商铺",
+      "font_class": "shangpu",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    }
+  ]
+}
