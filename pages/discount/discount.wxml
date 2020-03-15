@@ -50,7 +50,7 @@
 
    <view class="discount_item" wx:for="{{discount}}" wx:if="{{index%2<1}}">
      
-  <image  style="width:98%;height:200px;border-radius:4px 4px 0px 0px;" src="{{item.img}}"></image>
+  <image  style="width:98%;height:{{item.present_price>200?item.present_price:200}}px;border-radius:4px 4px 0px 0px;" src="{{item.img}}"></image>
 
   <view  style="height:100px;width:98%;" >
 
