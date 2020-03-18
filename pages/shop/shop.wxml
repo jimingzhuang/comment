@@ -1,2 +1,161 @@
 <!--pages/shop/shop.wxml-->
-<text>pages/shop/shop.wxml</text>
+<text  style="display:none;">pages/shop/shop.wxml</text>
+
+
+<view  class="shop_main" >
+
+<!-- 头部美食排行 -->
+<view    style="width:94%;">
+   <view class="iconfont icon-paihang" style="float:left;font-size:21px;color:#1F62F1;"></view>
+   <view style="font-size:19px;font-weight: bold;margin-left:6%;position: relative;bottom:2px;">美食排行</view>
+</view>
+
+<!-- 排行选项 -->
+<view  class="delicacy_ranking " >
+
+    <view wx:for="{{delicacy_ranking}}" class="delicacy_ranking_item " >
+      <view style="font-size:15px;font-weight: bold;">{{item.title}}</view>
+      <view style="font-size:12px;color:gray;">{{item.text}}</view>
+      <image style="width:50%;height:50px; border-radius:50px;position: relative;left:55%;" src="{{item.img}}"></image>
+    </view>
+</view>
+
+<!-- 精品榜单 -->
+       <!-- 间隔线 -->
+<view   style="width:100%;height:10px;background-color:#F6F6F6;"></view>
+       <!-- 精品榜单标题 -->
+<view   style="width:94%;position: relative; top:10px;">
+   <view class="iconfont icon-caipinpaihangbang" style="float:left;font-size:21px;color:#FF910F;"></view>
+   <view style="font-size:19px;font-weight: bold;margin-left:6%;position: relative;bottom:2px;">精品榜单</view>
+</view>
+      <!-- 精品榜单内容-->
+<view   style="width:94%;display:flex;margin-top:20px;height:140px;">
+     <view  class="{{scollTop>200?'none':''}}"   wx:for="{{Quality}}" style="text-align:center;background-color:#FAFAFA;width:30%;height:130px;margin-left:3%;">
+        <image style="width:55px;height:55px;border-radius:55px;margin-top:20%;" src="{{item.img}}"></image>
+        <view  style="font-size:15px;font-weight:bold;"> {{item.title}}</view>
+        <view style="font-size:11px;color:gray;">{{item.number}}家餐厅上榜</view>
+     </view>    
+</view>
+
+<!-- 全程上榜 -->
+      <!-- 间隔线 -->
+<view   style="width:100%;height:10px;background-color:#F6F6F6;"></view>
+<!-- 全城上榜标题 -->
+<view   style="width:94%;">
+   <view class="iconfont icon-canpan" style="float:left;font-size:35px;color:#F32901;"></view>
+   <view style="font-size:19px;font-weight: bold;margin-left:6%;position: relative;top:4px;">全城上榜
+   </view>
+</view>
+  <!-- 选项分类 -->
+  <view class="{{scollTop>200?'scollTop':''}}" style="width:94%;margin-top:20px;height:40px;">
+    <view class="{{changing_color==1?'classification_color':'classification'}}" bindtap="changing_color" data-idx="1" >美食</view>
+    <view class="{{changing_color==2?'classification_color':'classification'}}"  bindtap="changing_color" data-idx="2" >休闲娱乐</view>
+    <view class="{{changing_color==3?'classification_color':'classification'}}"  bindtap="changing_color" data-idx="3">商场</view>
+    <view class="{{changing_color==4?'classification_color':'classification'}}"  bindtap="changing_color" data-idx="4">景点</view>
+    <view class="{{changing_color==5?'classification_color':'classification'}}"  bindtap="changing_color" data-idx="5">酒店</view>
+  </view>
+        <!-- 间隔线 -->
+<view class="{{scollTop>200?'scollTop':''}}"  style="width:100%;height:2px;background-color:#F6F6F6;"></view>
+
+ <!-- 商店展示 -->
+ <view class="{{scollTop>200?'scollTopTwe':''}}"  style="wdith:94%;margin-top:15px;height:550px;overflow: scroll;">
+  <!-- 大的 -->
+   <view  wx:for="{{Delicacy_item}}"   class="big">
+ <!-- 小的 -->
+    <view  class="samil" style="wdith:94%;height:120px;margin-top:20px;">
+      <image style="width:30%;height:100px;float:left;" src="{{item.img}}"></image>
+       <!-- 文本 -->
+     <view style="width:65%;height:100px;float:left;padding-left:10px;">
+        <view>{{item.name}}({{item.address}}店)</view>
+
+        <view style="font-size:13px;margin-top:6px;">
+          <view class="iconfont icon-xingxing" style="color:red;float:left;"></view>
+          <view class="iconfont icon-xingxing" style="color:red;float:left;"></view>
+          <view class="iconfont icon-xingxing" style="color:red;float:left;"></view>
+          <view class="iconfont icon-xingxing" style="color:red;float:left;"></view>
+          <view class="iconfont icon-xingxing" style="color:red;float:left;"></view>
+          <view>￥{{item.pic}}/人</view>
+        </view>
+        
+        <view style="margin-top:6px;font-size:14px;color:gray;">{{item.text}}</view>
+
+         <view style="margin-top:6px;color:#FF7243;background-color:#FFEFEA;display: inline-block;font-size:11px;">南京火锅排行榜第一名</view>
+
+     </view>
+
+    <!-- 文本 -->
+     
+    </view>
+
+
+
+
+
+<view class="{{indexs==index?'':'zhanshi'}}">
+<view  wx:for="{{Delicacy_Twe}}" class="samil" style="wdith:94%;height:120px;">
+     
+      <image style="width:30%;height:100px;float:left;" src="{{item.img}}"></image>
+       <!-- 文本 -->
+     <view style="width:65%;height:100px;float:left;padding-left:10px;">
+        <view>{{item.name}}({{item.address}}店)</view>
+
+        <view style="font-size:13px;margin-top:6px;">
+          <view class="iconfont icon-xingxing" style="color:red;float:left;"></view>
+          <view class="iconfont icon-xingxing" style="color:red;float:left;"></view>
+          <view class="iconfont icon-xingxing" style="color:red;float:left;"></view>
+          <view class="iconfont icon-xingxing" style="color:red;float:left;"></view>
+          <view class="iconfont icon-xingxing" style="color:red;float:left;"></view>
+          <view>￥{{item.pic}}/人</view>
+        </view>
+        
+        <view style="margin-top:6px;font-size:14px;color:gray;">{{item.text}}</view>
+
+         <view style="margin-top:6px;color:#FF7243;background-color:#FFEFEA;display: inline-block;font-size:11px;">南京火锅排行榜第一名</view>
+
+     </view>
+    <!-- 文本 -->
+      
+    </view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- 小的 -->
+<view  class="{{item.zhanshis?'':'zhanshi'}}" bindtap="xuan" data-idx="{{index}}" style="width:94%;text-align:center; color:gray;"  data-idx="{{index}}">展示该品牌更多上榜门户<view style="color:gray;display: inline-block;margin-left:3px;" class="iconfont icon-arrow-down"></view></view>
+
+<view class="{{item.zhanshis?'zhanshi':''}}" bindtap="xuan" data-idx="{{index}}" style="width:94%;text-align:center; color:gray;"  data-idx="{{index}}">收起<view style="color:gray;display: inline-block;margin-left:3px;" class="iconfont icon-tubiaozhizuo-"></view></view>
+      <!-- 间隔线 -->
+       <view style="width:100%;height:5px;background-color:#F6F6F6;margin-top:10px;"></view>
+   </view>
+ <!-- 大的 -->
+ 
+ </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "430546",
+      "name": "下箭头",
+      "font_class": "arrow-down",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "6235951",
+      "name": "上箭头",
+      "font_class": "tubiaozhizuo-",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "622953",
+      "name": "ZS星星",
+      "font_class": "xingxing",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "5483423",
+      "name": "餐盘",
+      "font_class": "canpan",
+      "unicode": "e6e5",
+      "unicode_decimal": 59109
+    },
+    {
+      "icon_id": "7158855",
+      "name": "菜品排行榜",
+      "font_class": "caipinpaihangbang",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "2542740",
+      "name": "排行",
+      "font_class": "paihang",
+      "unicode": "e8e6",
+      "unicode_decimal": 59622
+    },
+    {
       "icon_id": "4166088",
       "name": "商铺",
       "font_class": "shangpu",

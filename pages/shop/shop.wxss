@@ -1,1 +1,68 @@
 /* pages/shop/shop.wxss */
+@import "/asstes/fonts/iconfont.wxss";
+
+.shop_main{
+  padding-left: 3%;
+  
+}
+.delicacy_ranking{
+  margin-top:15px;
+  overflow-x:scroll;
+  width:94%;
+  height:90px;
+  white-space: nowrap;
+}
+.delicacy_ranking_item{
+  width:26%;
+  margin-left:5px;
+  height:70px;
+  overflow: hidden;
+  border: 1px solid #F6F6F6;
+  display: inline-block;
+  padding-left: 3%;
+  box-shadow: 0px 2px 2px  #F6F6F6;
+  position: relative; 
+  
+  
+  
+}
+.classification{
+  text-align:center;
+  border-radius:25px;
+  background-color:#F6F6F6;
+  font-size:13px;
+  display: inline-block;padding:0px 13px 0px 13px;
+  line-height:25px;
+  margin-left: 5px;
+}
+
+.classification_color{
+  text-align:center;
+  border-radius:25px;
+  background-color:#FFEFEA;
+  color:#FF7243;
+  font-size:13px;
+  display: inline-block;padding:0px 13px 0px 13px;
+  line-height:25px;
+  margin-left: 5px;
+}
+.zhanshi{
+  display: none;
+}
+.scollTop{
+position: relative;
+ bottom: 140px;
+ z-index: 999;
+ background-color: white;
+}
+
+.scollTopTwe{
+  position: relative;
+   bottom: 130px;
+   z-index: 999;
+   background-color: white;
+  }
+
+.none{
+  display: none;
+}
