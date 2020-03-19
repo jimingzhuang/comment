@@ -10,7 +10,6 @@ Page({
     changing_color:1,
     Delicacy_item:[],
     indexs:0,
-    Delicacy_Twe:[],
     scollTop:true
 
   },
@@ -24,21 +23,19 @@ Page({
     wx.request({
       url: 'https://www.fastmock.site/mock/544fe525f786aa90532109bb02a3e513/Discount/Delicacy_Twe',
       success:res=>{
-       this.data.Delicacy_Twe=res.data.Delicacy_Twe
+        this.data.Delicacy_item[e.currentTarget.dataset.idx].delicacy_twe=res.data.Delicacy_Twe
        this.setData({
-        Delicacy_Twe:this.data.Delicacy_Twe
+        Delicacy_item:this.data.Delicacy_item
        })
       }
     })
    }else{
-    this.setData({
-      Delicacy_Twe:[]
-     })
+    this.data.Delicacy_item[e.currentTarget.dataset.idx].delicacy_twe=[];
    }
    this.data.Delicacy_item[e.currentTarget.dataset.idx].zhanshis=!this.data.Delicacy_item[e.currentTarget.dataset.idx].zhanshis;
     this.setData({
       Delicacy_item:this.data.Delicacy_item,
-      indexs:this.data.indexs,
+      indexs:this.data.indexs
       
     })
   },

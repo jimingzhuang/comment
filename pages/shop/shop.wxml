@@ -39,9 +39,9 @@
 
 <!-- 全程上榜 -->
       <!-- 间隔线 -->
-<view   style="width:100%;height:10px;background-color:#F6F6F6;"></view>
+<view  class="{{scollTop>200?'none':''}}"  style="width:100%;height:10px;background-color:#F6F6F6;"></view>
 <!-- 全城上榜标题 -->
-<view   style="width:94%;">
+<view  class="{{scollTop>200?'none':''}}"  style="width:94%;">
    <view class="iconfont icon-canpan" style="float:left;font-size:35px;color:#F32901;"></view>
    <view style="font-size:19px;font-weight: bold;margin-left:6%;position: relative;top:4px;">全城上榜
    </view>
@@ -55,10 +55,10 @@
     <view class="{{changing_color==5?'classification_color':'classification'}}"  bindtap="changing_color" data-idx="5">酒店</view>
   </view>
         <!-- 间隔线 -->
-<view class="{{scollTop>200?'scollTop':''}}"  style="width:100%;height:2px;background-color:#F6F6F6;"></view>
+<view class="{{scollTop>200?'none':''}}"  style="width:100%;height:2px;background-color:#F6F6F6;"></view>
 
  <!-- 商店展示 -->
- <view class="{{scollTop>200?'scollTopTwe':''}}"  style="wdith:94%;margin-top:15px;height:550px;overflow: scroll;">
+ <view class="{{scollTop>200?'scollTopTwe':''}}"  style="wdith:94%;margin-top:15px;height:600px;overflow: scroll;">
   <!-- 大的 -->
    <view  wx:for="{{Delicacy_item}}"   class="big">
  <!-- 小的 -->
@@ -91,8 +91,7 @@
 
 
 
-<view class="{{indexs==index?'':'zhanshi'}}">
-<view  wx:for="{{Delicacy_Twe}}" class="samil" style="wdith:94%;height:120px;">
+<view  wx:for="{{item.delicacy_twe}}" class="samil" style="wdith:94%;height:120px;">
      
       <image style="width:30%;height:100px;float:left;" src="{{item.img}}"></image>
        <!-- 文本 -->
@@ -116,9 +115,6 @@
     <!-- 文本 -->
       
     </view>
-
-
-</view>
 
 
 
