@@ -1,0 +1,38 @@
+<!--pages/perInto/perInto.wxml-->
+<text style="display:none;">pages/perInto/perInto.wxml</text>
+
+<view style="width:94%;margin-left:3%;">
+   <view style="width:100%;height:45px;border-bottom:1px solid #F0F0F0;"> 
+   <view style="font-size:15px;float:left;color:#222222; line-height: 45px;">头像</view>
+   <view class="iconfont icon-youjiantou" style="float:right;color:#898989;line-height: 45px;"></view>
+   <image src="{{userInfo.avatarUrl}}" style="width:40px;height:40px;float:right;border-radius:40px;"></image>
+   </view>
+
+   <view style="width:100%;height:45px;border-bottom:1px solid #F0F0F0;"> 
+   <view style="font-size:15px;float:left;color:#222222; line-height: 45px;">昵称</view>
+   <view class="iconfont icon-youjiantou" style="float:right;color:#898989;line-height: 45px;"></view>
+   <view style="font-size:13px;color:#999999;float:right;line-height: 45px;">{{userInfo.nickName}}</view>
+   </view>
+
+   <view style="width:100%;height:45px;border-bottom:1px solid #F0F0F0;"> 
+   <view style="font-size:15px;float:left;color:#222222; line-height: 45px;">性别</view>
+   <view class="iconfont icon-youjiantou" style="float:right;color:#898989;line-height: 45px;"></view>
+   <view style="font-size:13px;color:#587896;float:right;line-height: 45px;">{{userInfo.gender<1?'女':'男'}}</view>
+   
+   </view>
+
+   <view style="width:100%;height:45px;"> 
+   <view style="font-size:15px;float:left;color:#222222; line-height: 45px;">个人介绍</view>
+    <view class="iconfont icon-youjiantou" style="float:right;color:#898989;line-height: 45px;"></view>
+   <view style="font-size:13px;color:#999999;float:right;line-height: 45px;">啊啊啊啊啊</view>
+   </view>
+
+   <view style="width:100%;height:10px;background-color:#F6F6F6;"> 
+   </view>
+
+   <view style="width:100%;height:45px;"> 
+   <view style="font-size:15px;float:left;color:#222222; line-height: 45px;">我的手机</view>
+    <view class="iconfont icon-youjiantou" style="float:right;color:#898989;line-height: 45px;"></view>
+   <view style="font-size:13px;color:#999999;float:right;line-height: 45px;">15515163370</view>
+   </view>
+ </view>

@@ -1,5 +1,5 @@
-/* pages/mine/mine.wxss */ 
+/* pages/perInto/perInto.wxss */
 @import "/asstes/fonts/iconfont.wxss";
 .aa{
-  
+    
 }

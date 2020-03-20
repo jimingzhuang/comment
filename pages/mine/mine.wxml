@@ -1,2 +1,137 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<text style="display:none;">pages/mine/mine.wxml</text>
+  
+<view  style="width:100%;padding-left:5%;">
+
+<!-- 头部-个人头像，地址 -->
+  <view  style="width:94%;height:80px;" >
+    <image style="width:20%;float:left;height:68px;border-radius:68px;" src="{{userInfo.avatarUrl}}"></image>
+    <view style="width:54%;float:left;padding-left:3%;">
+     <view style="font-size:23px;margin-top:5px;font-weight: bold;">{{userInfo.nickName}}</view>
+     <view style="font-size:13px;color:gray;margin-top:5px;">{{address}}</view>
+    </view>
+    <view  style="width:20%;float:left;font-size:12px;color:gray;">
+     <view style="float:left;margin-top:35%;">个人主页</view>
+     <view class="iconfont icon-youjiantou" style="margin-top:35%;"></view>
+    </view>
+  </view>
+<!-- 头部-个人头像，地址 -->
+
+  <!-- 个人名片 -->
+   <view style="width:90%;height:75px;box-shadow:#BCBCBC 0px 0px 10px;margin-top:10px;border-radius: 5px;">
+   <!-- 左上半部分 -->
+      <view style="width:75%;height:75px;float:left;">
+        <view style="width:100%;height:50%;padding-left:5%;">
+         <view class="iconfont icon-mingpian" style="color:#FF884E;float:left;font-size:28px;margin-top:7px;"></view>
+         <view style="float:left;font-size:17px;color:#333333;margin-top:10px;font-weight: bold;margin-left:2px;">我的点评名片</view>
+         <view style="float:left;font-size:13px;color:#BCBCBC;margin-top:13px;margin-left:3px;">让更多的人认识你</view>
+        </view>
+         <!-- 左上半部分 -->
+        <!-- 左下半部分 -->
+        <view style="padding-left:5%;">
+           <view style="font-size:14px;color:gray;float:left;margin-left:6px;">点评1</view>
+           <view style="font-size:14px;color:gray;float:left;margin-left:6px;">|</view>
+           <view style="font-size:14px;color:gray;float:left;margin-left:6px;">签到1</view>
+           <view style="font-size:14px;color:gray;float:left;margin-left:6px;">|</view>
+        </view>
+        <!-- 左下半部分 -->
+      </view>
+      <view style="width:25%;height:75px;float:left;">
+          <view class="iconfont icon-ico" style="float:left;font-size:20px;margin-top:30%;margin-left:50%;color:#BBBBBB;"></view>
+          <view class="iconfont icon-youjiantou" style="float:left;margin-top:32%;color:#BBBBBB;"></view>
+      </view> 
+       <!-- 左下半部分 -->
+   </view>
+  <!-- 个人名片 -->
+  
+  <!-- 我的订单 -->
+  <view style="font-size:18px;font-weight: bold;width:94%;margin-top:37px;">我的订单</view>
+
+   <!-- 货品状态     -->
+   <view style="width:90%;height:50px;display:flex;margin-top:13px;"> 
+   <view style="text-align:center;width:25%;">
+    <view  class="iconfont icon-daifukuan" style="color:#333333;font-size:28px;"></view>
+    <view style="font-size:13px;color:#898989;margin-top:2px;">待付款</view>
+   </view>
+   <view style="text-align:center;width:25%;">
+    <view  class="iconfont icon-keshiyong" style="color:#333333;font-size:28px;font-weight: bold;"></view>
+    <view style="font-size:13px;color:#898989;margin-top:2px;">可使用</view>
+   </view>
+   <view style="text-align:center;width:25%;">
+    <view  class="iconfont icon-tuikuanshouhou" style="color:#333333;font-size:28px;font-weight: bold;"></view>
+    <view style="font-size:13px;color:#898989;margin-top:2px;">售后/退款</view>
+   </view>
+   <view style="text-align:center;width:25%;">
+    <view  class="iconfont icon-dingwei-" style="color:#333333;font-size:28px;font-weight: bold;"></view>
+    <view style="font-size:13px;color:#898989;margin-top:2px;">全部订单</view>
+   </view>
+
+   </view>
+ <!-- 货品状态     -->
+
+
+  <!-- 必备工具 -->
+  <view style="font-size:18px;font-weight: bold;width:94%;margin-top:37px;">必备工具</view>
+
+   <!-- 工具     -->
+   <view style="width:90%;height:50px;display:flex;margin-top:13px;"> 
+   <view style="text-align:center;width:25%;">
+    <view  class="iconfont icon-lingjuanzhongxin" style="color:#333333;font-size:28px;"></view>
+    <view style="font-size:13px;color:#898989;margin-top:2px;">领劵中心</view>
+   </view>
+   <view style="text-align:center;width:25%;">
+    <view  class="iconfont icon-Cutlery" style="color:#333333;font-size:28px;font-weight: bold;"></view>
+    <view style="font-size:13px;color:#898989;margin-top:2px;">今天吃啥</view>
+   </view>
+   <view style="text-align:center;width:25%;">
+    <view  class="iconfont icon-toupiao" style="color:#333333;font-size:28px;font-weight: bold;"></view>
+    <view style="font-size:13px;color:#898989;margin-top:2px;">聚餐投票</view>
+   </view>
+   <view style="text-align:center;width:25%;">
+    <view  class="iconfont icon-xieziban" style="color:#333333;font-size:28px;font-weight: bold;"></view>
+    <view style="font-size:13px;color:#898989;margin-top:2px;">贡献信息</view>
+   </view>
+
+   </view>
+ <!-- 工具     -->
+
+ <!-- 底部选项 -->
+ <view style="width:94%;margin-top:30px;">
+   <view style="width:94%;height:55px;border-bottom:1px solid #F0F0F0;"> 
+   <view style="font-size:15px;float:left;color:#222222; line-height: 55px;">优惠劵</view>
+   <view class="iconfont icon-youjiantou" style="float:right;color:#898989;line-height: 55px;"></view>
+   </view>
+
+   <view style="width:94%;height:55px;border-bottom:1px solid #F0F0F0;"> 
+   <view style="font-size:15px;float:left;color:#222222; line-height: 55px;">收藏</view>
+   <view class="iconfont icon-youjiantou" style="float:right;color:#898989;line-height: 55px;"></view>
+   </view>
+
+   <view style="width:94%;height:55px;border-bottom:1px solid #F0F0F0;" bindtap="perinfo"> 
+   <view style="font-size:15px;float:left;color:#222222; line-height: 55px;">设置</view>
+   <view style="font-size:13px;color:gray;float:left;margin-left:5px;line-height: 55px;">修改手机号码</view>
+   <view class="iconfont icon-youjiantou" style="float:right;color:#898989;line-height: 55px;"></view>
+   </view>
+
+   <view style="width:94%;height:55px;border-bottom:1px solid #F0F0F0;"> 
+   <view style="font-size:15px;float:left;color:#222222; line-height: 55px;">意见反馈</view>
+   <view class="iconfont icon-youjiantou" style="float:right;color:#898989;line-height: 55px;"></view>
+   </view>
+
+   <view style="width:94%;height:55px;border-bottom:1px solid #F0F0F0;"> 
+   <view style="font-size:15px;float:left;color:#222222; line-height: 55px;">客服电话：10100011</view>
+   <view class="iconfont icon-youjiantou" style="float:right;color:#898989;line-height: 55px;"></view>
+   </view>
+ </view>
+
+<!-- 版本号 -->
+<view style="width:94%;height:150px;">
+    <view style="line-height:150px;color:gray;font-size:13px;text-align:center;">
+    V5.2.0
+    </view>
+</view>
+
+
+</view>
+
+

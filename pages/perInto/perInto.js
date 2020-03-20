@@ -1,13 +1,11 @@
-// pages/mine/mine.js
+// pages/perInto/perInto.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo:[],
-    address:''
-
+    userInfo:[]
   },
 
   /**
@@ -22,36 +20,8 @@ Page({
         })
       },
     })
-   let _this=this;
-    wx.getLocation({
-      altitude: 'altitude',
-      success:function(res){
-        console.log(res)
-        wx.request({
-          url: 'https://apis.map.qq.com/ws/geocoder/v1/?location=',
-          data:{
-            location:`${res.latitude},${res.longitude}`,
-            key:'BSHBZ-QJQK3-D5Q3O-3J4SH-U3RW5-CLBFZ'
-          },
-          success(address){
-            console.log(address)
-            _this.setData({
-              address:address.data.result.address
-            })
-          }
-
-        })
-
-      }
-    })
-
-
   },
-  perinfo:function(){
-    wx.navigateTo({
-      url: '../perInto/perInto',
-    })
-  },
+ 
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -78,7 +48,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    
+
   },
 
   /**
@@ -100,8 +70,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
- 
-  
-
+  }
 })
